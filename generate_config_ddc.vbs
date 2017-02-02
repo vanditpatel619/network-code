@@ -39,22 +39,22 @@ a = Split(line, "S")
 
 ' Apply some logic and figure out the rest of values
 If a(1) = "3" Then
-  sIP = "10.11.11." + a(0) + " 255.255.255.0"
-  sGW = "10.11.11.254"
+  sIP = "xx.xx.xx." + a(0) + " 255.255.255.0"
+  sGW = "xx.xx.xx.1"
 End If
 
 If a(1) = "1" Then
-  sIP = "10.11.12." + a(0) + " 255.255.254.0"
-  sGW = "10.11.13.254"
-  sKeep_src = "10.11.25.1"
-  sKeep_dst = "10.11.25.2"
+  sIP = "xx.xx.xx." + a(0) + " 255.255.254.0"
+  sGW = "xx.xx.xx.1"
+  sKeep_src = "1.1.1.1"
+  sKeep_dst = "1.1.1.2"
 End If
 
 If a(1) = "2" Then
-  sIP = "10.11.13." + a(0) + " 255.255.254.0"
-  sGW = "10.11.13.254"
-  sKeep_src = "10.11.25.2"  
-  sKeep_dst = "10.11.25.1"
+  sIP = "xx.xx.xx." + a(0) + " 255.255.254.0"
+  sGW = "xx.xx.xx.1"
+  sKeep_src = "1.1.1.2"  
+  sKeep_dst = "1.1.1.1"
 End If
 
 sRack = a(0)
